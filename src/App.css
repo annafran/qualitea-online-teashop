@@ -89,9 +89,18 @@ body {
     color: var(--primaryDarkLiver);
 }
 
+.buttonContainer {
+    display: grid;
+    align-items: center;
+}
+
 .button {
     text-align: center;
     border: none;
     background-color: white;
     color: var(--primaryDarkLiver);
+    font-family: inherit;
+    font-size: 1rem;
+    display: inline;
+    padding: 0.5rem;
 }

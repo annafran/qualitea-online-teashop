@@ -14,9 +14,11 @@ const Product = ({ image, name, description, price }) => {
                 <p className="productDescription">{description}</p>
                 <p className="productPrice">{price}</p>
             </div>
-            <button className="button" onClick={onClick}>
-                Buy now
-            </button>
+            <div className="buttonContainer">
+                <button className="button" onClick={onClick}>
+                    Buy now
+                </button>
+            </div>
         </li>
     );
 };
