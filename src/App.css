@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
 
+:root {
+    --primaryBrown: #87421d;
+    --primaryLilac: #d8d2d4;
+    --primaryBeige: #d5b2a6;
+}
+
 body {
-    background-color: #d8d2d4;
+    background-color: var(--primaryLilac);
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
     padding: 0;
@@ -37,7 +43,7 @@ body {
 .companyName {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #87421d;
+    color: var(--primaryBrown);
     margin-left: 0;
     padding-left: 0;
 }
@@ -60,7 +66,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto 1.5rem auto;
     border-radius: 0.125rem;
-    background-color: #d5b2a6;
+    background-color: var(--primaryBeige);
     width: 80%;
     color: white;
 }
@@ -75,11 +81,11 @@ body {
 }
 
 .productName {
-    color: #87421d;
+    color: var(--primaryBrown);
 }
 
 .button {
     text-align: center;
     border: none;
-    background-color: #d8d2d4;
+    background-color: var(--primaryLilac);
 }
