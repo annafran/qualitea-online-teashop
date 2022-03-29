@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
 import Products from "./components/Products";
+import Header from "./components/Header";
 
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
@@ -21,16 +22,8 @@ function App() {
 
     return (
         <div className="container">
-            <h1>Quali-Tea</h1>
-            <div className="headerImage">
-                <img
-                    alt="logo"
-                    src="images/Beige Minimalist Botanical Tea Logo.png"
-                />
-            </div>
-            <div>
-                <Products />
-            </div>
+            <Header />
+            <Products products={products} />
         </div>
     );
 }

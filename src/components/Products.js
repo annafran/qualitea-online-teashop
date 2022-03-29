@@ -1,3 +1,4 @@
+import React from "react";
 import Product from "./Product";
 import formatAmount from "../utils/formatAmount";
 
@@ -16,3 +17,5 @@ const Products = ({ products }) => {
         </ul>
     );
 };
+
+export default Products;
