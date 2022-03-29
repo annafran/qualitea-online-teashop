@@ -104,3 +104,28 @@ body {
     display: inline;
     padding: 0.5rem;
 }
+
+@media only screen and (min-width: 48rem) {
+    .imageBannerContainer {
+        height: 12rem;
+    }
+    .companyName {
+        font-size: 1.8rem;
+    }
+    .productGrid {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .productCard {
+        width: 100%;
+        display: grid;
+    }
+
+    .buttonContainer {
+        display: grid;
+        align-self: end;
+    }
+}
