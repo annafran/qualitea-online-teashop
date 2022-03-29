@@ -24,20 +24,6 @@ body {
     height: auto;
 }
 
-.companyNameContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.companyName {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primaryBrown);
-    margin-left: 0;
-    padding-left: 0;
-}
-
 .imageBannerContainer {
     width: 100%;
     height: 8rem;
