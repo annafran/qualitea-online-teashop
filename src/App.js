@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
+import Products from "./components/Products";
 
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
