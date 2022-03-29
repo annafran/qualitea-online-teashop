@@ -142,4 +142,20 @@ body {
     .productGrid {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .textContainer {
+        padding: 2rem;
+    }
+    .productName {
+        font-size: 2rem;
+    }
+    .productDescription {
+        font-size: 1.5rem;
+    }
+    .productPrice {
+        font-size: 2rem;
+    }
+    .button {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
 }
