@@ -15,14 +15,14 @@ body {
 
 .companyBranding {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     width: 70%;
     margin: 0 auto;
     height: 4rem;
 }
 
 .logoContainer {
-    width: 60%;
+    width: 50%;
     display: grid;
     align-items: center;
     justify-self: end;
