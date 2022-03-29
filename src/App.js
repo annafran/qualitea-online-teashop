@@ -21,11 +21,15 @@ function App() {
     return (
         <div className="container">
             <h1>Quali-Tea</h1>
-            <img
-                alt="logo"
-                src="images/Beige Minimalist Botanical Tea Logo.png"
-            />
-            <p>{products.price}</p>
+            <div className="headerImage">
+                <img
+                    alt="logo"
+                    src="images/Beige Minimalist Botanical Tea Logo.png"
+                />
+            </div>
+            <div>
+                <Products />
+            </div>
         </div>
     );
 }
