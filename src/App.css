@@ -1,27 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --primaryBrown: #87421d;
-    --primaryLilac: #d8d2d4;
-    --primaryBeige: #d5b2a6;
+    --primarySaddleBrown: #87421d;
+    --primaryLightGrey: #d8d2d4;
+    --primarySand: #f4cdae;
+    --primarySilverPink: #d5b2a6;
+    --primaryDarkLiver: #554348;
+    --primaryDeepTaupe: #795663;
 }
 
 body {
-    background-color: var(--primaryLilac);
-    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--primaryLightGrey);
+    font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.brandingContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .logoContainer {
     width: 7rem;
-    margin: 0 auto;
     height: auto;
+    grid-column: 1 / 2;
+    justify-self: end;
 }
 
 .logo {
     width: 100%;
     height: auto;
+}
+
+.companyNameContainer {
+    grid-column: 2 / 3;
+    display: grid;
+    align-items: center;
+}
+
+.companyName {
+    color: var(--primarySaddleBrown);
+    font-size: 1.3rem;
+    font-family: "Julius Sans One", sans-serif;
 }
 
 .imageBannerContainer {
@@ -43,9 +64,9 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto 1.5rem auto;
     border-radius: 0.125rem;
-    background-color: var(--primaryBeige);
+    background-color: var(--primarySand);
     width: 80%;
-    color: white;
+    color: var(--primarySaddleBrown);
 }
 
 .productPhoto {
@@ -58,11 +79,19 @@ body {
 }
 
 .productName {
-    color: var(--primaryBrown);
+    color: var(--primaryDarkLiver);
+    font-size: 1.4rem;
+}
+
+.productPrice {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primaryDarkLiver);
 }
 
 .button {
     text-align: center;
     border: none;
-    background-color: var(--primaryLilac);
+    background-color: white;
+    color: var(--primaryDarkLiver);
 }
