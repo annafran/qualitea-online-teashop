@@ -7,15 +7,11 @@ const Header = ({ logo, headerImage }) => {
                 <div className="logoContainer">
                     <img className="logo" alt="logo" src={logo} />
                 </div>
-                <h1 className="companyName">Quali-Tea</h1>
+                <div className="companyNameContainer">
+                    <h1 className="companyName">Quali-Tea</h1>
+                </div>
             </div>
-            <div className="imageBannerContainer">
-                <img
-                    className="imageBanner"
-                    alt="teacup banner"
-                    src={headerImage}
-                />
-            </div>
+            <div className="imageBannerContainer"></div>
         </div>
     );
 };

@@ -4,7 +4,7 @@ import formatAmount from "../utils/formatAmount";
 
 const Products = ({ products }) => {
     return (
-        <ul className="product-grid">
+        <ul className="productGrid">
             {products.map((product) => (
                 <Product
                     key={product.id}
