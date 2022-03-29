@@ -9,12 +9,16 @@ const Product = ({ image, name, description, price }) => {
     return (
         <li className="productCard">
             <img className="productPhoto" src={image} alt={name} />
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <p>
-                <span>Price: {price}</span>
-            </p>
-            <button onClick={onClick}>Buy now</button>
+            <div className="textContainer">
+                <h3 className="productName">{name}</h3>
+                <p>{description}</p>
+                <p>
+                    <span>Price: {price}</span>
+                </p>
+            </div>
+            <button className="button" onClick={onClick}>
+                Buy now
+            </button>
         </li>
     );
 };

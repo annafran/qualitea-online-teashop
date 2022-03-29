@@ -9,15 +9,14 @@ body {
 
 .companyBranding {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     width: 70%;
     margin: 0 auto;
-    height: 5rem;
+    height: 4rem;
 }
 
 .logoContainer {
-    width: 40%;
-    margin: 0 auto;
+    width: 60%;
     display: grid;
     align-items: center;
     justify-self: end;
@@ -30,15 +29,17 @@ body {
 }
 
 .companyNameContainer {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .companyName {
-    grid-column: 2 / 3;
     font-size: 1.5rem;
     font-weight: 700;
     color: #87421d;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .imageBannerContainer {
@@ -57,13 +58,28 @@ body {
 
 .productCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
+    margin: 0 auto 1.5rem auto;
     border-radius: 0.125rem;
     background-color: #d5b2a6;
     width: 80%;
+    color: white;
 }
 
 .productPhoto {
     width: 100%;
     height: auto;
+}
+
+.textContainer {
+    padding: 1rem;
+}
+
+.productName {
+    color: #87421d;
+}
+
+.button {
+    text-align: center;
+    border: none;
+    background-color: #d8d2d4;
 }
