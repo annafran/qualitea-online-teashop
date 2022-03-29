@@ -1,16 +1,20 @@
 import React from "react";
-import headerImage from "../images/headerImage.jpg";
-import logo from "../images/logo.png";
 
-const Header = () => {
+const Header = ({ logo, headerImage }) => {
     return (
-        <div>
-            <h1>Quali-Tea</h1>
-            <div className="logo">
-                <img alt="logo" src={logo} />
+        <div className="header">
+            <div className="companyBranding">
+                <div className="logoContainer">
+                    <img className="logo" alt="logo" src={logo} />
+                </div>
+                <h1 className="companyName">Quali-Tea</h1>
             </div>
-            <div className="headerImage">
-                <img alt="tea banner" src={headerImage} />
+            <div className="imageBannerContainer">
+                <img
+                    className="imageBanner"
+                    alt="teacup banner"
+                    src={headerImage}
+                />
             </div>
         </div>
     );

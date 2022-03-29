@@ -1,5 +1,7 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
+import headerImage from "./images/headerImage.jpg";
+import logo from "./images/logo.png";
 import Products from "./components/Products";
 import Header from "./components/Header";
 
@@ -22,7 +24,7 @@ function App() {
 
     return (
         <div className="container">
-            <Header />
+            <Header logo={logo} headerImage={headerImage} />
             <Products products={products} />
         </div>
     );
