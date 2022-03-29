@@ -13,23 +13,13 @@ body {
     padding: 0;
 }
 
-.companyBranding {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    width: 70%;
-    margin: 0 auto;
-    height: 4rem;
-}
-
 .logoContainer {
-    width: 50%;
-    display: grid;
-    align-items: center;
-    justify-self: end;
+    width: 7rem;
+    margin: 0 auto;
+    height: auto;
 }
 
 .logo {
-    grid-column: 1 / 2;
     width: 100%;
     height: auto;
 }

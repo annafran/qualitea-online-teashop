@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import "./App.css";
 import headerImage from "./images/headerImage.jpg";
-import logo from "./images/logo.png";
+import logo from "./images/QualiTeaTransparentLogo.png";
 import Products from "./components/Products";
 import Header from "./components/Header";
 
