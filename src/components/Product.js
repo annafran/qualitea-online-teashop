@@ -1,6 +1,11 @@
 import React from "react";
+import { checkout } from "../services/checkout";
 
 const Product = ({ image, name, description, price }) => {
+    const onClick = () => {
+        checkout();
+    };
+
     return (
         <li className="product-grid-item">
             <img src={image} alt={name} />
@@ -9,7 +14,7 @@ const Product = ({ image, name, description, price }) => {
             <p>
                 <span>Price: {price}</span>
             </p>
-            <button>Buy now</button>
+            <button onClick={onClick}>Buy now</button>
         </li>
     );
 };
