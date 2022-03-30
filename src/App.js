@@ -4,6 +4,7 @@ import headerImage from "./images/headerImage.jpg";
 import logo from "./images/transparentLogo.png";
 import Products from "./components/Products";
 import Header from "./components/Header";
+import FilterBy from "./components/FilterBy";
 
 // The function that makes the fetch request to the Products API
 import { getProducts } from "./services/getProducts";
@@ -25,6 +26,7 @@ function App() {
     return (
         <div className="container">
             <Header logo={logo} headerImage={headerImage} />
+            <FilterBy products={products} />
             <Products products={products} />
         </div>
     );
