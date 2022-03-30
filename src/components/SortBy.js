@@ -11,8 +11,8 @@ const SortBy = ({ setSortBy }) => {
         Sort by:{" "}
       </label>
       <select className="select" id="sort" onChange={onChange}>
-        <option value="low">Price: Low to High</option>
-        <option value="high">Price: High to Low</option>
+        <option value="low">Price: Low</option>
+        <option value="high">Price: High</option>
       </select>
     </div>
   );

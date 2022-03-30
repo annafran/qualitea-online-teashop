@@ -91,7 +91,7 @@ body {
   border: 1px solid var(--primarySand);
   border-radius: 0.125rem;
   font-weight: 300;
-  width: 8rem;
+  width: min-content;
   grid-column: 2 / 3;
   margin-left: 1rem;
 }
@@ -213,27 +213,32 @@ body {
 
   .toolbar {
     margin-bottom: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.5rem;
   }
 
   .filter {
-    width: 50%;
     grid-column: 1 / 2;
-    justify-self: end;
-    grid-template-columns: 1fr;
+    justify-content: start;
+    grid-template-columns: min-content min-content;
   }
 
   .sortBy {
-    width: 50%;
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
+    justify-content: end;
+    grid-template-columns: min-content min-content;
+  }
+
+  .label {
     justify-self: start;
-    grid-template-columns: 1fr;
+    white-space: nowrap;
   }
 
   .select {
     font-size: 1.3rem;
     padding: 0.3rem;
+    margin-left: 0.5rem;
+    justify-self: start;
   }
 
   .companyName {
