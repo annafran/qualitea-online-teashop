@@ -7,7 +7,9 @@ const FilterBy = ({ setFilterBy }) => {
 
   return (
     <div className="filter">
-      <label htmlFor="filterProducts">Filter by: </label>
+      <label className="label" htmlFor="filterProducts">
+        Filter by:{" "}
+      </label>
       <select className="select" id="filterProducts" onChange={onChange}>
         <option value="all">All</option>
         <option value="teabags">Tea bags</option>

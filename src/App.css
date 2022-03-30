@@ -57,15 +57,31 @@ body {
 }
 
 .toolbar {
-  margin-bottom: 1.5rem;
+  margin: 0 auto 1.5rem auto;
   font-size: 1rem;
   color: var(--primarySaddleBrown);
   display: grid;
   justify-items: center;
+  width: 80%;
 }
 
 .filter {
   margin-bottom: 0.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.sortBy {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
+
+.label {
+  justify-self: end;
+  align-self: center;
 }
 
 .select {
@@ -75,6 +91,9 @@ body {
   border: 1px solid var(--primarySand);
   border-radius: 0.125rem;
   font-weight: 300;
+  width: 8rem;
+  grid-column: 2 / 3;
+  margin-left: 1rem;
 }
 
 .productGrid {
@@ -195,18 +214,21 @@ body {
   .toolbar {
     margin-bottom: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
     font-size: 1.5rem;
   }
 
   .filter {
+    width: 50%;
     grid-column: 1 / 2;
     justify-self: end;
+    grid-template-columns: 1fr;
   }
 
   .sortBy {
+    width: 50%;
     grid-column: 2 / 3;
     justify-self: start;
+    grid-template-columns: 1fr;
   }
 
   .select {
