@@ -7,6 +7,7 @@
     --primarySilverPink: #d5b2a6;
     --primaryDarkLiver: #554348;
     --primaryDeepTaupe: #795663;
+    --primarySeashell: #fdf4ed;
 }
 
 body {
@@ -56,25 +57,27 @@ body {
 }
 
 .toolbar {
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
     color: var(--primarySaddleBrown);
+    display: grid;
+    justify-items: center;
 }
 
 .filter {
-    font-family: inherit;
-    display: inline;
-    grid-column: 2 / 3;
-    justify-self: end;
+    margin-bottom: 0.5rem;
 }
 
 .sortBy {
-    font-family: inherit;
+    grid-row: 2 / 3;
     display: inline;
-    grid-column: 3 / 4;
+}
+
+.select {
+    font-family: inherit;
+    color: var(--primarySaddleBrown);
+    background-color: var(--primarySeashell);
+    border: 1px solid var(--primarySand);
 }
 
 .productGrid {
@@ -102,12 +105,13 @@ body {
     background-color: var(--primaryDeepTaupe);
     color: white;
     border-radius: 50%;
-    padding: 0.7rem;
+    padding: 0.5rem;
     z-index: 1;
     position: absolute;
     display: inline-block;
-    top: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
 }
 
 .textContainer {
@@ -179,11 +183,36 @@ body {
     .imageBannerContainer {
         height: 20rem;
     }
+
+    .toolbar {
+        margin-bottom: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .filter {
+        display: inline;
+        grid-column: 2 / 3;
+        justify-self: end;
+    }
+
+    .sortBy {
+        display: inline;
+        grid-column: 3 / 4;
+    }
+
     .companyName {
         font-size: 2.8rem;
     }
     .productGrid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .featured {
+        padding: 0.7rem;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1rem;
     }
     .textContainer {
         padding: 2rem;

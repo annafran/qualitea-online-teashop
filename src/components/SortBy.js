@@ -8,9 +8,9 @@ const SortBy = ({ setSortBy }) => {
     return (
         <div className="sortBy">
             <label htmlFor="sort">Sort by: </label>
-            <select id="sort" onChange={onChange}>
-                <option value="low">Price: Lowest first</option>
-                <option value="high">Price: Highest first</option>
+            <select className="select" id="sort" onChange={onChange}>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
             </select>
         </div>
     );
