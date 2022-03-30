@@ -8,6 +8,7 @@
     --primaryDarkLiver: #554348;
     --primaryDeepTaupe: #795663;
     --primarySeashell: #fdf4ed;
+    --primaryUnbleachedSilk: #f9ddc8;
 }
 
 body {
@@ -68,16 +69,13 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.sortBy {
-    grid-row: 2 / 3;
-    display: inline;
-}
-
 .select {
     font-family: inherit;
     color: var(--primarySaddleBrown);
     background-color: var(--primarySeashell);
     border: 1px solid var(--primarySand);
+    border-radius: 0.125rem;
+    font-weight: 300;
 }
 
 .productGrid {
@@ -89,7 +87,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 0 auto 1.5rem auto;
     border-radius: 0.125rem;
-    background-color: var(--primarySand);
+    background-color: var(--primaryUnbleachedSilk);
     width: 80%;
     color: var(--primarySaddleBrown);
     z-index: 2;
@@ -192,14 +190,18 @@ body {
     }
 
     .filter {
-        display: inline;
         grid-column: 2 / 3;
         justify-self: end;
     }
 
     .sortBy {
-        display: inline;
         grid-column: 3 / 4;
+        justify-self: start;
+    }
+
+    .select {
+        font-size: 1.3rem;
+        padding: 0.3rem;
     }
 
     .companyName {
