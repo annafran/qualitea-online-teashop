@@ -2,7 +2,7 @@
 
 An online shop, QUALITEA, selling quality teas and tea accessories, such as teapots and herbal tea bags.\
 The webpage can be filtered by category (tea bags or tea accessories), can be sorted by price, and product cards have a "new" feature for new products.\
-Customers can select the products they wish to purchase and they will be taken to an online checkout in Stripe to pay via credit card.\
+Customers can select the products they wish to purchase and they will be taken to an online checkout in Stripe to pay via credit card.
 
 ![Screenshot of QUALITEA website](screenshot-qualitea-tablet.png)
 
@@ -18,6 +18,7 @@ This project uses the following systems:
 
 - [Prettier](https://prettier.io/)
 - [Stylelint](https://stylelint.io/)
+- [ESLint](https://eslint.org/)
 
 ## Prerequisites
 
