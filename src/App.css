@@ -55,6 +55,28 @@ body {
     margin-bottom: 2rem;
 }
 
+.toolbar {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--primarySaddleBrown);
+}
+
+.filter {
+    font-family: inherit;
+    display: inline;
+    grid-column: 2 / 3;
+    justify-self: end;
+}
+
+.sortBy {
+    font-family: inherit;
+    display: inline;
+    grid-column: 3 / 4;
+}
+
 .productGrid {
     list-style: none;
     padding: 0;
