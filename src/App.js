@@ -15,13 +15,21 @@ import { getProducts } from "./services/getProducts";
 function App() {
     // use the products variable to read all of your products
     // and display them on your page
-    const [products] = useState([]);
+    const [products, setProducts] = useState([]);
     const [filterBy, setFilterBy] = useState("all");
     const [sortBy, setSortBy] = useState("low");
-    const [filteredProducts, setFilteredProducts] = useState(getProducts());
+    const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(() => {
         const loadData = async () => {
+            setProducts(await getProducts());
+        };
+
+        loadData();
+    }, []);
+
+    useEffect(() => {
+        const loadData = () => {
             const filtered = filterByCategory(products, filterBy);
             const sorted = sortProducts(filtered, sortBy);
             setFilteredProducts([...sorted]);
@@ -43,12 +51,3 @@ function App() {
 }
 
 export default App;
-
-// useEffect(() => {
-//     const loadData = async () => {
-//         const products = await getProducts();
-//         setProducts(products);
-//     };
-
-//     loadData();
-// }, []);
