@@ -11,6 +11,11 @@ This project uses the following systems:
 * [React](https://github.com/facebook/react)
 * [Begin](https://begin.com/)
 
+## Dev dependencies
+
+* [Prettier](https://prettier.io/)
+* [Stylelint](https://stylelint.io/)
+
 ## Prerequisites
 
 * [Node](https://nodejs.org/)
