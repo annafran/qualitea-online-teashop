@@ -11,6 +11,7 @@ const Products = ({ products }) => {
                     name={product.name}
                     description={product.description}
                     price={product.prices[0]}
+                    featured={product.metadata.new}
                 />
             ))}
         </ul>
