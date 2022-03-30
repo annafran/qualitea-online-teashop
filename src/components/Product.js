@@ -2,8 +2,8 @@ import React from "react";
 import { checkout } from "../services/checkout";
 
 const Product = ({ image, name, description, price }) => {
-    const onClick = () => {
-        checkout();
+    const onClick = ({ priceId }) => {
+        checkout({ priceId });
     };
 
     return (

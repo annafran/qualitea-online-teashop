@@ -105,6 +105,13 @@ body {
     padding: 0.5rem;
 }
 
+.button:hover,
+.buttonContainer:hover {
+    cursor: pointer;
+    color: var(--primaryLightGrey);
+    background-color: var(--primaryDeepTaupe);
+}
+
 @media only screen and (min-width: 48rem) {
     .imageBannerContainer {
         height: 12rem;

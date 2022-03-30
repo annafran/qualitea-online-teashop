@@ -25,8 +25,6 @@ function App() {
     return (
         <div className="container">
             <Header logo={logo} headerImage={headerImage} />
-            {/* <FilterBy />
-            <SortBy /> */}
             <Products products={products} />
         </div>
     );
