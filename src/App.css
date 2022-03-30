@@ -4,7 +4,6 @@
     --primarySaddleBrown: #87421d;
     --primaryLightGrey: #d8d2d4;
     --primarySand: #f4cdae;
-    --primarySilverPink: #d5b2a6;
     --primaryDarkLiver: #554348;
     --primaryDeepTaupe: #795663;
     --primarySeashell: #fdf4ed;
@@ -109,15 +108,15 @@ body {
     display: inline-block;
     top: 1rem;
     right: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .textContainer {
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .productName {
-    color: var(--primaryDarkLiver);
+    color: var(--primarySaddleBrown);
     font-size: 1.4rem;
 }
 
@@ -125,6 +124,11 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
     color: var(--primaryDarkLiver);
+}
+
+.productDescription {
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 
 .buttonContainer {
@@ -138,7 +142,7 @@ body {
     background-color: white;
     color: var(--primaryDarkLiver);
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: inline;
     padding: 0.5rem;
 }
@@ -168,9 +172,15 @@ body {
         width: 100%;
         display: grid;
     }
+    .textContainer {
+        padding: 1.5rem;
+    }
     .buttonContainer {
         display: grid;
         align-self: end;
+    }
+    .button {
+        font-size: 1.5rem;
     }
 }
 
@@ -184,18 +194,18 @@ body {
 
     .toolbar {
         margin-bottom: 2rem;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
         font-size: 1.5rem;
     }
 
     .filter {
-        grid-column: 2 / 3;
+        grid-column: 1 / 2;
         justify-self: end;
     }
 
     .sortBy {
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         justify-self: start;
     }
 
@@ -221,12 +231,13 @@ body {
     }
     .productName {
         font-size: 2rem;
+        margin-top: 0;
     }
     .productDescription {
         font-size: 1.5rem;
     }
     .productPrice {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .button {
         font-size: 2rem;
