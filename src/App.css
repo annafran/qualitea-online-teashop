@@ -67,11 +67,25 @@ body {
     background-color: var(--primarySand);
     width: 80%;
     color: var(--primarySaddleBrown);
+    z-index: 2;
+    position: relative;
 }
 
 .productPhoto {
     width: 100%;
     height: auto;
+}
+
+.featured {
+    background-color: var(--primaryDeepTaupe);
+    color: white;
+    border-radius: 50%;
+    padding: 0.7rem;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    top: 1.5rem;
+    right: 1.5rem;
 }
 
 .textContainer {
