@@ -1,6 +1,5 @@
 import React from "react";
 import Product from "./Product";
-import formatAmount from "../utils/formatAmount";
 
 const Products = ({ products }) => {
     return (
@@ -11,7 +10,7 @@ const Products = ({ products }) => {
                     image={product.images[0]}
                     name={product.name}
                     description={product.description}
-                    price={formatAmount(product.prices[0].unit_amount)}
+                    price={product.prices[0]}
                 />
             ))}
         </ul>
