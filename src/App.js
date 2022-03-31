@@ -9,14 +9,14 @@ import Search from "./components/Search";
 import filterByCategory from "./utils/filterByCategory";
 import sortProducts from "./utils/sortProducts";
 import { getProducts } from "./services/getProducts";
-import { getProductsBySearch } from "./services/getProductsBySearch";
+import { getProductsBySearch } from "./utils/getProductsBySearch";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [filterBy, setFilterBy] = useState("all");
   const [sortBy, setSortBy] = useState("low");
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const [query, setSearch] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const loadData = async () => {
@@ -36,13 +36,22 @@ function App() {
     loadData();
   }, [filterBy, sortBy, products]);
 
+  useEffect(() => {
+    const loadData = () => {
+      const searched = getProductsBySearch(products, query);
+      setFilteredProducts([...searched]);
+    };
+
+    loadData();
+  }, [products, query]);
+
   return (
     <div>
       <Header logo={logo} />
       <div className="toolbar">
         <FilterBy setFilterBy={setFilterBy} />
         <SortBy setSortBy={setSortBy} />
-        <Search setSearch={setSearch} />
+        <Search setSearch={setSearch} query={query} />
       </div>
       <Products products={filteredProducts} />
     </div>
