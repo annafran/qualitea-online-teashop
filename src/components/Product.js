@@ -1,4 +1,3 @@
-import React from "react";
 import { checkout } from "../services/checkout";
 import formatAmount from "../utils/formatAmount";
 

@@ -91,7 +91,7 @@ body {
   border: 1px solid var(--primarySand);
   border-radius: 0.125rem;
   font-weight: 300;
-  width: min-content;
+  width: 8rem;
   grid-column: 2 / 3;
   margin-left: 1rem;
 }
@@ -239,6 +239,7 @@ body {
     padding: 0.3rem;
     margin-left: 0.5rem;
     justify-self: start;
+    width: 12rem;
   }
 
   .companyName {

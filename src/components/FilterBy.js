@@ -1,5 +1,3 @@
-import React from "react";
-
 const FilterBy = ({ setFilterBy }) => {
   const onChange = (event) => {
     setFilterBy(event.target.value);
