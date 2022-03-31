@@ -5,15 +5,18 @@ import Products from "./components/Products";
 import Header from "./components/Header";
 import FilterBy from "./components/FilterBy";
 import SortBy from "./components/SortBy";
+import Search from "./components/Search";
 import filterByCategory from "./utils/filterByCategory";
 import sortProducts from "./utils/sortProducts";
 import { getProducts } from "./services/getProducts";
+import { getProductsBySearch } from "./services/getProductsBySearch";
 
 function App() {
   const [products, setProducts] = useState([]);
   const [filterBy, setFilterBy] = useState("all");
   const [sortBy, setSortBy] = useState("low");
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [query, setSearch] = useState("");
 
   useEffect(() => {
     const loadData = async () => {
@@ -39,6 +42,7 @@ function App() {
       <div className="toolbar">
         <FilterBy setFilterBy={setFilterBy} />
         <SortBy setSortBy={setSortBy} />
+        <Search setSearch={setSearch} />
       </div>
       <Products products={filteredProducts} />
     </div>
