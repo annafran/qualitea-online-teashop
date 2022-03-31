@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ logo, headerImage }) => {
   return (
-    <div className="header">
+    <div>
       <div className="brandingContainer">
         <div className="logoContainer">
           <img className="logo" alt="logo" src={logo} />
