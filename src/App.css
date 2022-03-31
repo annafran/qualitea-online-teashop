@@ -72,11 +72,11 @@ body {
   margin-bottom: 0.5rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 5rem auto;
 }
 
 .label {
-  justify-self: end;
+  justify-self: start;
   align-self: center;
 }
 
@@ -88,9 +88,9 @@ body {
   border: 1px solid var(--primarySand);
   border-radius: 0.125rem;
   font-weight: 300;
-  width: 9rem;
+  width: 9.5rem;
   grid-column: 2 / 3;
-  margin-left: 1rem;
+  padding: 0.5rem;
 }
 
 .searchInput::placeholder {
@@ -200,6 +200,11 @@ body {
   }
   .companyName {
     font-size: 1.8rem;
+  }
+
+  .toolbar {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
   }
   .productGrid {
     width: 80%;
