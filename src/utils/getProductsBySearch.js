@@ -8,4 +8,4 @@ const getProductsBySearch = (products, query) => {
   });
 };
 
-export default { getProductsBySearch };
+export default getProductsBySearch;

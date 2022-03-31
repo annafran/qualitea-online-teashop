@@ -9,7 +9,7 @@ import Search from "./components/Search";
 import filterByCategory from "./utils/filterByCategory";
 import sortProducts from "./utils/sortProducts";
 import { getProducts } from "./services/getProducts";
-import { getProductsBySearch } from "./utils/getProductsBySearch";
+import getProductsBySearch from "./utils/getProductsBySearch";
 
 function App() {
   const [products, setProducts] = useState([]);
