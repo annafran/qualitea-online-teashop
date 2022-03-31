@@ -1,10 +1,21 @@
 # 01 Project - Online Shop - QUALITEA
 
 An online shop, QUALITEA, selling quality teas and tea accessories, such as teapots and herbal tea bags.\
-The webpage can be filtered by category (tea bags or tea accessories), can be sorted by price, and product cards have a "new" feature for new products.\
-Customers can select the products they wish to purchase and they will be taken to an online checkout in Stripe to pay via credit card.
+Customers can select the products they wish to purchase and they will be taken to an online checkout in Stripe to pay via credit card.\
+The webpage has the following features:
+
+- Products can be filtered by category (tea bags or tea accessories).
+- Products can be sorted by price.
+- The customer can search for products by name using the search bar.
+- Product cards have a "new" feature for new products.
+
+## Screenshot of QUALITEA website
 
 ![Screenshot of QUALITEA website](screenshot-qualitea-tablet.png)
+
+## Screenshot of search function
+
+![Screenshot of website search function](screenshot-matcha-search.png)
 
 ## Dependencies
 
@@ -39,5 +50,5 @@ This project uses the following systems:
 
 - Favicon downloaded from: [Flaticon - Green tea icons created by monkik](https://www.flaticon.com/free-icons/green-tea)
 - Product images taken from: [Teadrop](https://www.teadrop.com.au/)
-- Header image from: [Unsplash - Photo by Svitlana](https://unsplash.com/@kekse_und_ich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Header image from: [Unsplash - Photo by Svitlana](https://unsplash.com/photos/eXw6CPGWwcg)
 - Logo created on: [Canva](https://www.canva.com/)
