@@ -10,6 +10,7 @@ import filterByCategory from "./utils/filterByCategory";
 import sortProducts from "./utils/sortProducts";
 import { getProducts } from "./services/getProducts";
 import getProductsBySearch from "./utils/getProductsBySearch";
+import Credits from "./components/Credits";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -54,6 +55,7 @@ function App() {
         <Search setSearch={setSearch} query={query} />
       </div>
       <Products products={filteredProducts} />
+      <Credits />
     </div>
   );
 }
