@@ -11,6 +11,7 @@ import sortProducts from "./utils/sortProducts";
 import { getProducts } from "./services/getProducts";
 import getProductsBySearch from "./utils/getProductsBySearch";
 import Credits from "./components/Credits";
+import NumberProducts from "./components/NumberProducts";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -52,11 +53,8 @@ function App() {
       <div className="toolbar">
         <FilterBy setFilterBy={setFilterBy} />
         <SortBy setSortBy={setSortBy} />
-        <Search
-          setSearch={setSearch}
-          query={query}
-          number={filteredProducts.length}
-        />
+        <Search setSearch={setSearch} query={query} />
+        <NumberProducts number={filteredProducts.length} />
       </div>
       <Products products={filteredProducts} />
       <Credits />

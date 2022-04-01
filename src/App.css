@@ -98,11 +98,18 @@ body {
   color: var(--primarySaddleBrown);
 }
 
+.numberProductsContainer {
+  justify-self: end;
+}
+
 .numberProducts {
   text-align: right;
   font-weight: 300;
   font-size: 0.8rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
+
 .productGrid {
   list-style: none;
   padding: 0;
@@ -211,6 +218,10 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
   }
+
+  .numberProductsContainer {
+    align-self: end;
+  }
   .productGrid {
     width: 80%;
     margin: 0 auto;
@@ -244,9 +255,11 @@ body {
 
   .toolbar {
     margin-bottom: 2rem;
-    grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.5rem;
-    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 2rem;
   }
 
   .filter {
@@ -277,6 +290,15 @@ body {
 
   .searchInput::placeholder {
     font-size: 1.3rem;
+  }
+
+  .numberProductsContainer {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .numberProducts {
+    font-size: 1rem;
   }
 
   .label {
