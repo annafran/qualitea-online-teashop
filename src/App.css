@@ -70,7 +70,7 @@ body {
 .sortBy,
 .search {
   margin-bottom: 0.5rem;
-  width: 100%;
+  width: min-content;
   display: grid;
   grid-template-columns: 5rem auto;
 }
@@ -246,19 +246,20 @@ body {
 
   .filter {
     grid-column: 1 / 2;
-    justify-content: start;
     grid-template-columns: min-content min-content;
+    justify-self: start;
   }
 
   .sortBy {
     grid-column: 2 / 3;
-    justify-content: start;
     grid-template-columns: min-content min-content;
+    justify-self: start;
   }
 
   .search {
     grid-column: 3 / 4;
-    justify-content: start;
+    width: 100%;
+    justify-self: end;
   }
 
   .searchInput {
