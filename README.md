@@ -7,15 +7,16 @@ The webpage has the following features:
 - Products can be filtered by category (tea bags or tea accessories).
 - Products can be sorted by price.
 - The customer can search for products by name using the search bar.
-- Product cards have a "new" feature for new products.
+- The number of products resulting from a search will be displayed.
+- Products featured as "new" will have a label on the product card.
 
 ## Screenshot of QUALITEA website
 
-![Screenshot of QUALITEA website](screenshot-qualitea-tablet.png)
+![Screenshot of QUALITEA website](screenshot-qualitea-desktop.png)
 
 ## Screenshot of search function
 
-![Screenshot of website search function](screenshot-matcha-search.png)
+![Screenshot of website search function](screenshot-qualitea-search.png)
 
 ## Dependencies
 
