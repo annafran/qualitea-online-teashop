@@ -98,6 +98,11 @@ body {
   color: var(--primarySaddleBrown);
 }
 
+.numberProducts {
+  text-align: right;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
 .productGrid {
   list-style: none;
   padding: 0;

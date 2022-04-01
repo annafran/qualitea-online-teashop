@@ -52,7 +52,11 @@ function App() {
       <div className="toolbar">
         <FilterBy setFilterBy={setFilterBy} />
         <SortBy setSortBy={setSortBy} />
-        <Search setSearch={setSearch} query={query} />
+        <Search
+          setSearch={setSearch}
+          query={query}
+          number={filteredProducts.length}
+        />
       </div>
       <Products products={filteredProducts} />
       <Credits />
