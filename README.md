@@ -12,11 +12,11 @@ The webpage has the following features:
 
 ## Screenshot of QUALITEA website
 
-![Screenshot of QUALITEA website](screenshot-qualitea-tablet.png)
+![Screenshot of QUALITEA website](screenshot-qualitea-desktop.png)
 
 ## Screenshot of search function
 
-![Screenshot of website search function](screenshot-matcha-search.png)
+![Screenshot of website search function](screenshot-qualitea-search.png)
 
 ## Dependencies
 
