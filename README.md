@@ -1,5 +1,7 @@
 # 01 Project - Online Shop - QUALITEA
 
+This was a project for Developers Institute. Boilerplate code was provided for the base of the React app. I coded all CSS. 
+
 An online shop, QUALITEA, selling quality teas and tea accessories, such as teapots and herbal tea bags.\
 Customers can select the products they wish to purchase and they will be taken to an online checkout in Stripe to pay via credit card.\
 The webpage has the following features:
